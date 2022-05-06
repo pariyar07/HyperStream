@@ -1,1 +1,68 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+@import url("https://waldo-ui.netlify.app/styles/main.css");
+
+
+@import url(pages/homepage/styles.css);
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    color: var(--primary-bg);
+    background-color: var(--primary-clr);
+    font-family: 'Open Sans', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+:root {
+    --primary-clr: #ffffff;
+    --primary-bg: #000000;
+    --string-clr: #77767B;
+    --primary-clr-hover: #414141;
+    --secondary-bg: #171717;
+    --badge-bg: #0099ff;
+    --placeholder-clr: #c8c8c8;
+    --liked-clr: #FF0000;
+    --success-light: #a8f0c6;
+    --success-dark: #0b7035;
+    --info-light: #88C2DF;
+    --info-dark: #14455e;
+    --warning-light: #FACC14;
+    --warning-dark: #5e4b00;
+    --danger-light: #ff615c;
+    --danger-dark: #530300;
+    --notif-blue: #0099ff;
+    --activity-success: #adff2f;
+    --activity-error: #DC2625;
+    --activity-warning: #F59E0B;
+    --activity-awol: #969696;
+    --secondary-btn-light: #ffff00;
+    --secondary-btn-dark: #caca00;
+    --badge-clr: #e67a00;
+    --video-primary: #62cc8c;
+    --video-primary-light: #7df6ad;
+    --video-primary-dark: #09913f;
+    --video-secondary: #212023;
+    --video-secondary-dark: #151517;
+}
