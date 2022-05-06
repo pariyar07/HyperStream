@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HomeNav = () => {
+const MainNav = () => {
     return (
         <>
         <nav className="video-nav-content">
@@ -29,4 +29,4 @@ const HomeNav = () => {
     )
 }
 
-export default HomeNav
+export default MainNav

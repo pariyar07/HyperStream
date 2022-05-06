@@ -3,18 +3,27 @@ import {AiFillHome, AiOutlinePlus} from "react-icons/ai"
 import {BsCollectionPlayFill} from "react-icons/bs"
 import {MdOutlineFavorite, MdWatchLater} from "react-icons/md"
 import {FaHistory} from "react-icons/fa"
+import { NavLink } from "react-router-dom";
 
-const HomeSideBar = () => {
+function navActive({ isActive }) {
+    return {
+        color: isActive ? "var(--primary-clr)" : "",
+        background: isActive ? "var(--string-clr)" : "", 
+        border: isActive ? "none" : "none",
+    };
+}
+
+const SideBar = () => {
     return (
         <>
             <div className="home-sidebar">
-                <ul className="sidebar-top-list">
-                    <li><AiFillHome/>&nbsp; Home</li>
-                    <li><BsCollectionPlayFill/>&nbsp; Your Playlist</li>
-                    <li><MdOutlineFavorite/>&nbsp; Favourites</li>
-                    <li><FaHistory/>&nbsp; History</li>
-                    <li><MdWatchLater/>&nbsp; Watch Later</li>
-                </ul>
+                <div className="sidebar-top-list">
+                    <NavLink to="/" style={navActive}><AiFillHome/>&nbsp; Home</NavLink>
+                    <NavLink to="/explore" style={navActive}><BsCollectionPlayFill/>&nbsp; Explore</NavLink>
+                    <NavLink to="/playlist" style={navActive}><MdOutlineFavorite/>&nbsp; Your Playlist</NavLink>
+                    <NavLink to="/history" style={navActive}><FaHistory/>&nbsp; History</NavLink>
+                    <NavLink to="/watch-later" style={navActive}><MdWatchLater/>&nbsp; Watch Later</NavLink>
+                </div>
                 <div className="sidebar-sub-list">
                     <h3>Subscription</h3>
                     <div className="sub-pics">
@@ -46,4 +55,4 @@ const HomeSideBar = () => {
     )
 }
 
-export default HomeSideBar
+export default SideBar

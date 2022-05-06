@@ -82,13 +82,13 @@ home-main-body
     gap: 0.2rem;
     margin: 1.5rem 0;
 }
-.sidebar-top-list>li{
+.sidebar-top-list a{
     color: var(--string-clr);
     padding: 0.5rem 7rem 0.5rem 2.5rem;
     transition: 0.5s ease-in-out;
     cursor: pointer;
 }
-.sidebar-top-list>li:hover{
+.sidebar-top-list a:hover{
     color: var(--primary-clr);
     background-color: var(--string-clr);
 }
@@ -165,7 +165,7 @@ home-main-body
     justify-content: center;
     min-width: 16rem;
     background: var(--video-secondary-dark);
-    margin: 2rem 1rem;
+    margin: 8rem 1rem 0 1rem;
     padding: 1rem 1.5rem;
     border-radius: 0.5rem;
     text-align: center;
