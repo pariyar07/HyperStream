@@ -61,7 +61,7 @@ home-nav
 /* 
 home-main-body
 */
-.home-body{
+.main-body{
     display: flex;
     flex-direction: row;
     min-height: 100vh;
@@ -165,7 +165,7 @@ home-main-body
     justify-content: center;
     min-width: 16rem;
     background: var(--video-secondary-dark);
-    margin: 8rem 1rem 0 1rem;
+    margin: 8rem 1rem 1rem 1rem;
     padding: 1rem 1.5rem;
     border-radius: 0.5rem;
     text-align: center;
@@ -320,21 +320,7 @@ main-bottom-section
 
 .videos-to-try ul li{
     position: relative;
-}
-.videos-to-try ul li .play-icon{
-    display: none;
-    color: var(--primary-clr);
-    font-size: 5rem;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
     cursor: pointer;
-    transition: 1s ease-in-out;
-}
-.videos-to-try ul:hover li .play-icon{
-    display: block;
 }
 .videos-to-try p{
     font-size: 1.2rem;
