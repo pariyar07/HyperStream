@@ -1,0 +1,9 @@
+.playlist-main-container {
+    width: 80vw;
+    background-color: var(--video-secondary-dark);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    padding-bottom: 7.5rem;
+    gap: 5rem;
+}

@@ -53,7 +53,7 @@ const HomeContent = () => {
                             return <ul key={cat._id} >
                                 <li>
                                     <img src={cat.thumbnail} alt="category thumbnail" />
-                                    <p>{cat.categoryName}</p>
+                                    <p>{cat.category}</p>
                                 </li>
                             </ul>
                         })}

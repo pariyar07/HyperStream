@@ -9,7 +9,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Most EMOTIONAL Comebacks of the Season - 2021/22",
-    categoryName: "Comebacks",
+    category: "Comebacks",
     creator: "Vanemas",
     views: "1,665,717",
     date: "Oct 29, 2021",
@@ -22,7 +22,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "10 MOST EMOTIONAL COMEBACKS IN FOOTBALL • BEST COMEBACKS IN FOOTBALL HISTORY",
-    categoryName: "Comebacks",
+    category: "Comebacks",
     creator: "FELO",
     views: "950,711",
     date: "Apr 22, 2020",
@@ -35,7 +35,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Most Dramatic Football Matches 2020 Crazy Comebacks",
-    categoryName: "Comebacks",
+    category: "Comebacks",
     creator: "Sir Alex",
     views: "11,538,797",
     date: "Mar 17, 2020",
@@ -48,7 +48,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Man United Best Comebacks This Season 2021/22",
-    categoryName: "Comebacks",
+    category: "Comebacks",
     creator: "SkStudioz",
     views: "931,906",
     date: "Dec 13, 2021",
@@ -62,7 +62,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Funny & Crazy Goal Celebrations ● Football Show ● HD",
-    categoryName: "Celebration",
+    category: "Celebration",
     creator: "MNXHD",
     views: "1,986,018",
     date: "Jan 11, 2018",
@@ -75,7 +75,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "11 most iconic goal celebrations in football history | Oh My Goal",
-    categoryName: "Celebration",
+    category: "Celebration",
     creator: "Soccer Stories - Oh My Goal",
     views: "467,201",
     date: "Feb 21, 2021",
@@ -88,7 +88,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Never Celebrate a Goal This Way",
-    categoryName: "Celebration",
+    category: "Celebration",
     creator: "BRAIN TIME",
     views: "14,155,377",
     date: "Sep 1, 2018",
@@ -101,7 +101,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Epic goal celebration in football | Top 10 goal celebrations",
-    categoryName: "Celebration",
+    category: "Celebration",
     creator: "Freak edits",
     views: "69,000",
     date: "Jan 9, 2021",
@@ -115,7 +115,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Unforgettable Goals in Football",
-    categoryName: "Goals",
+    category: "Goals",
     creator: "TKHD",
     views: "21,534,295",
     date: "May 4, 2020",
@@ -128,7 +128,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Top 35 Legendary Goals In Football History",
-    categoryName: "Goals",
+    category: "Goals",
     creator: "Notelicioux",
     views: "10,414,517",
     date: "Nov 1, 2018",
@@ -141,7 +141,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "100 Best Goals Of The Decade • 2010-2019",
-    categoryName: "Goals",
+    category: "Goals",
     creator: "Notelicioux",
     views: "3,679,103",
     date: "Dec 17, 2019",
@@ -154,7 +154,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "20 CRAZIEST Goals In Football History",
-    categoryName: "Goals",
+    category: "Goals",
     creator: "KickFlix",
     views: "2,947,482",
     date: "Jan 29, 2022",
@@ -168,7 +168,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Top 50+ Unique & Original Football Skills",
-    categoryName: "Skills",
+    category: "Skills",
     creator: "Home of Football",
     views: "5,965,141",
     date: "Aug 24, 2019",
@@ -180,7 +180,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Most Humiliating Skills in Football",
-    categoryName: "Skills",
+    category: "Skills",
     creator: "TKHD",
     views: "20,873,111",
     date: "Nov 2, 2019",
@@ -192,7 +192,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "These Football Skills Should Be Illegal",
-    categoryName: "Skills",
+    category: "Skills",
     creator: "JN Football",
     views: "15,700,821",
     date: "May 16, 2020",
@@ -204,7 +204,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "0% Luck, 100% Skill",
-    categoryName: "Skills",
+    category: "Skills",
     creator: "Teo CRi",
     views: "21,128,998",
     date: "Dec 9, 2021",
@@ -217,7 +217,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Peter Drury's Best Champions League Matches 2021/22",
-    categoryName: "Champions League",
+    category: "Champions League",
     creator: "SkStudioz2",
     views: "27,533",
     date: "May 6, 2022",
@@ -229,7 +229,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Legendary Champions League Matches (HD)",
-    categoryName: "Champions League",
+    category: "Champions League",
     creator: "Calcio Show",
     views: "1,677,804",
     date: "May 10, 2020",
@@ -241,7 +241,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Unforgettable Champions League Matches",
-    categoryName: "Champions League",
+    category: "Champions League",
     creator: "NostBall",
     views: "544,703",
     date: "Feb 25, 2022",
@@ -253,7 +253,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "BEST CL Knock Out Matches EVER",
-    categoryName: "Champions League",
+    category: "Champions League",
     creator: "Vanemas Football",
     views: "628,711",
     date: "Nov 29, 2021",
@@ -266,7 +266,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "BEST Premier League Goals of the Decade | 2010 - 2019",
-    categoryName: "Premier League",
+    category: "Premier League",
     creator: "Premier League",
     views: "13,508,902",
     date: "Dec 30, 2019",
@@ -278,7 +278,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Highest-scoring Premier League Matches",
-    categoryName: "Premier League",
+    category: "Premier League",
     creator: "Premier League",
     views: "3,831,716",
     date: "May 12, 2020",
@@ -290,7 +290,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Manchester United 3-2 Spurs | EXTENDED HIGHLIGHTS",
-    categoryName: "Premier League",
+    category: "Premier League",
     creator: "Tottenham Hotspur",
     views: "2,840,004",
     date: "Mar 14, 2022",
@@ -302,7 +302,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Ronaldo stars as United beat 10-man Liverpool | Manchester United 3-0 Liverpool (2008) | Classics",
-    categoryName: "Premier League",
+    category: "Premier League",
     creator: "Manchester United",
     views: "10,879,586",
     date: "Feb 23, 2019",
