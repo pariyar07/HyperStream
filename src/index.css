@@ -6,6 +6,7 @@
 @import url(pages/homepage/styles.css);
 @import url(pages/explore/styles.css);
 @import url(pages/playlist/styles.css);
+@import url(pages/singleVideoPage/styles.css);
 
 *,
 ::before,
@@ -67,4 +68,5 @@ input:focus, textarea:focus, select:focus{
     --video-primary-dark: #09913f;
     --video-secondary: #212023;
     --video-secondary-dark: #151517;
+    --youtube-red: #CC0100;
 }

@@ -8,6 +8,8 @@ import Explore from "pages/explore/explore.jsx"
 import Playlist from "pages/playlist/playlist.jsx"
 import History from "pages/history/history.jsx"
 import WatchLater from "pages/watch-later/watch-later.jsx"
+import Liked from "pages/liked/liked.jsx"
+import SingleVideoPage from "pages/singleVideoPage";
 import { VideoProvider } from "context/videoContext";
 
 
@@ -22,8 +24,10 @@ root.render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/explore" element={<Explore />} />
+          <Route path="/video/:videoId" element={<SingleVideoPage />} />
           <Route path="/playlist" element={<Playlist />} />
           <Route path="/history" element={<History />} />
+          <Route path="/liked" element={<Liked />} />
           <Route path="/watch-later" element={<WatchLater />} />
           <Route path="*" element={<div style={{ display: "flex", justifyContent: "center" }}><h1 style={{ fontSize: "5rem" }}>Page Not Found!</h1></div>} />
         </Routes>

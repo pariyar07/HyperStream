@@ -1,10 +1,11 @@
 import MainNav from "components/mainNav";
 import SideBar from 'components/sideBar';
 import { useVideo } from "context/videoContext";
-import PlaylistVideo from "components/playlistVideo"
+import PlaylistVideo from "components/playlistVideo";
+import PlaylistBlock from "components/playlistBlock";
 
 const Playlist = () => {
-    const { videoState: { playlist, liked }, loader } = useVideo();
+    const { videoState: { playlist }, loader } = useVideo();
 
     return (
         <>
@@ -16,20 +17,11 @@ const Playlist = () => {
                         <>
                             <div className="explore-section">
                                 {playlist.length > 0 ? <h2>Playlist</h2> : <h2 style={{ textAlign: 'center' }}>Playlist not Made!</h2>}
-                                <div className="explore-videos">
+                                <div className="playlist-videos">
                                     {playlist.map((video) => {
-                                        return <div key={video._id}>
-                                            <PlaylistVideo video={video} />
-                                        </div>
-                                    })}
-                                </div>
-                            </div>
-                            <div className="explore-section">
-                                {liked.length > 0 ? <h2>Liked Videos</h2> : ""}
-                                <div className="explore-videos">
-                                    {liked.map((video) => {
-                                        return <div key={video._id}>
-                                            <PlaylistVideo video={video} />
+                                        return <div key={video.video._id} className="playlist-box">
+                                            <PlaylistBlock playlistName={video}/>
+                                            <PlaylistVideo video={video.video}/>
                                         </div>
                                     })}
                                 </div>

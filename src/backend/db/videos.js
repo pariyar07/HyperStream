@@ -15,7 +15,8 @@ export const videos = [
     date: "Oct 29, 2021",
     likes: "30K",
     thumbnail: "assets/thumbnail/comeback1.jpeg",
-    url: "https://www.youtube.com/watch?v=fY3ZwG8u9ZE",
+    url: "https://www.youtube.com/embed/fY3ZwG8u9ZE",
+    sub: "1.2M",
     description:
       "There have been so many comebacks already this season. Cristiano Ronaldo is often on the winning side of them.",
   },
@@ -28,7 +29,8 @@ export const videos = [
     date: "Apr 22, 2020",
     likes: "8.6K",
     thumbnail: "assets/thumbnail/comeback2.jpeg",
-    url: "https://www.youtube.com/watch?v=wzZn0BEw9cI",
+    url: "https://www.youtube.com/embed/wzZn0BEw9cI",
+    sub: "1.2M",
     description:
       "This video contains the Most Emotional and Most Legendary Comebacks in Football History such as Milan vs Liverpool, Real Madrid vs Atletico, Barcelona vs PSG and many others.",
   },
@@ -41,7 +43,8 @@ export const videos = [
     date: "Mar 17, 2020",
     likes: "218K",
     thumbnail: "assets/thumbnail/comeback3.jpeg",
-    url: "https://www.youtube.com/watch?v=hM3XUuY1MN8",
+    url: "https://www.youtube.com/embed/hM3XUuY1MN8",
+    sub: "1.2M",
     description:
       "There were few thrilling and dramatic football matches in this 2019-2020 season. Great comebacks and tense moments, epic and legendary last minute goals 2020. Great matche was between Liverpool vs Atletico Madrid on Champions League. Diego Simeone's crazy reactions were priceless after Llorente and Morata goals. Wolves made a several unbelievable comebacks vs Manchester City and Tottenham in Premier League. Amazing tensed match between Ajax and Chelsea 4-4. Borussia Dortmund vs Inter 3-2 was one of the most dramatic match on UCL. Liverpool vs Salzburg 4-3, great play by Salzburg etc.",
   },
@@ -54,7 +57,8 @@ export const videos = [
     date: "Dec 13, 2021",
     likes: "18K",
     thumbnail: "assets/thumbnail/comeback4.jpeg",
-    url: "https://www.youtube.com/watch?v=e1aLgTXl0hI&t=24s",
+    url: "https://www.youtube.com/embed/e1aLgTXl0hI&t=24s",
+    sub: "1.2M",
     description:
       "Man United Best Comebacks This Season 2021/22 (english commentary)",
   },
@@ -68,7 +72,8 @@ export const videos = [
     date: "Jan 11, 2018",
     likes: "22K",
     thumbnail: "assets/thumbnail/celebration1.jpeg",
-    url: "https://www.youtube.com/watch?v=itiaHDzt9Rk",
+    url: "https://www.youtube.com/embed/itiaHDzt9Rk",
+    sub: "1.2M",
     description:
       "Football Goal Celebrations ● Funny & Crazy Goal Celebrations - Best, Crazy, Funny Football Goal Celebrations: Ronaldinho, Lingard, Pogba, Dybala, Griezmann, Lewandowski, Ronaldo etc.",
   },
@@ -81,7 +86,8 @@ export const videos = [
     date: "Feb 21, 2021",
     likes: "13K",
     thumbnail: "assets/thumbnail/celebration2.jpeg",
-    url: "https://www.youtube.com/watch?v=3nLQFLHW82Q",
+    url: "https://www.youtube.com/embed/3nLQFLHW82Q",
+    sub: "1.2M",
     description:
       "Goal celebrations are as much a part of football as the goals. And there are some legendary celebration in this sport! Here are 11 celebrations that have gone down in football history!",
   },
@@ -94,7 +100,8 @@ export const videos = [
     date: "Sep 1, 2018",
     likes: "93K",
     thumbnail: "assets/thumbnail/celebration3.jpeg",
-    url: "https://www.youtube.com/watch?v=GRZeiPnoZw8",
+    url: "https://www.youtube.com/embed/GRZeiPnoZw8",
+    sub: "1.2M",
     description:
       "Football causes a huge number of different emotions among people. Some people love it, other people hate it, and during the games the fans send their love to their team and find the most unusual ways to express their joy... but also other emotions. And sometimes the players also want to somehow let out their happiness after they score a goal. You might think it's okay for them to celebrate. However, players sometimes behave not according to the rules of football.",
   },
@@ -107,7 +114,8 @@ export const videos = [
     date: "Jan 9, 2021",
     likes: "1K",
     thumbnail: "assets/thumbnail/celebration4.jpeg",
-    url: "https://www.youtube.com/watch?v=osARlySjRT0",
+    url: "https://www.youtube.com/embed/osARlySjRT0",
+    sub: "1.2M",
     description:
       "These celebrations has taken over the world. Almost all football fans are doing this.",
   },
@@ -121,7 +129,8 @@ export const videos = [
     date: "May 4, 2020",
     likes: "191K",
     thumbnail: "assets/thumbnail/goals1.jpeg",
-    url: "https://www.youtube.com/watch?v=r_lN52VwrBo",
+    url: "https://www.youtube.com/embed/r_lN52VwrBo",
+    sub: "1.2M",
     description:
       "Unforgettable, spectacular and best goals in football. Ronaldo, Messi, Neymar, Ronaldinho, Balotelli, Balle, Ibrahimovic and more in the video!",
   },
@@ -134,7 +143,8 @@ export const videos = [
     date: "Nov 1, 2018",
     likes: "106K",
     thumbnail: "assets/thumbnail/goals2.jpeg",
-    url: "https://www.youtube.com/watch?v=RLxWIgoo-ic",
+    url: "https://www.youtube.com/embed/RLxWIgoo-ic",
+    sub: "1.2M",
     description:
       "Top 35 Legendary Goals In Football History ft. Ronaldinho, Pele, Diego Maradona, Johan Cruyff, Zinedine Zidane etc.",
   },
@@ -147,7 +157,8 @@ export const videos = [
     date: "Dec 17, 2019",
     likes: "34K",
     thumbnail: "assets/thumbnail/goals3.jpeg",
-    url: "https://www.youtube.com/watch?v=64Vu-Vn8Hyk",
+    url: "https://www.youtube.com/embed/64Vu-Vn8Hyk",
+    sub: "1.2M",
     description:
       "100 Best Goals Of The Decade • 2010-2019 ft. Lionel Messi, Zlatan Ibrahimovic, Cristiano Ronaldo, Wayne Rooney, Neymar, Robin van Persie, James Rodriguez, Mohamed Salah etc.",
   },
@@ -160,7 +171,8 @@ export const videos = [
     date: "Jan 29, 2022",
     likes: "27K",
     thumbnail: "assets/thumbnail/goals4.jpeg",
-    url: "https://www.youtube.com/watch?v=y8H9AOf413M",
+    url: "https://www.youtube.com/embed/y8H9AOf413M",
+    sub: "1.2M",
     description:
     "These are the 20 CRAZIEST Goals in Football History...",
   },
@@ -174,7 +186,8 @@ export const videos = [
     date: "Aug 24, 2019",
     likes: "74K",
     thumbnail: "assets/thumbnail/skills1.jpeg",
-    url: "https://www.youtube.com/watch?v=OOvyseZM1gQ",
+    url: "https://www.youtube.com/embed/OOvyseZM1gQ",
+    sub: "1.2M",
     description: "What's the player that you have in your mind when we talk about unique and original skills? Skills that will blow your mind. Check out all skills in the video!",
   },
   {
@@ -186,7 +199,8 @@ export const videos = [
     date: "Nov 2, 2019",
     likes: "226K",
     thumbnail: "assets/thumbnail/skills2.jpeg",
-    url: "https://www.youtube.com/watch?v=MuARV64u7g0",
+    url: "https://www.youtube.com/embed/MuARV64u7g0",
+    sub: "1.2M",
     description: "The most humiliating, amazing skills in football. Van Dijk, Salah, Ronaldo, Messi, Kaka and more in video!",
   },
   {
@@ -198,7 +212,8 @@ export const videos = [
     date: "May 16, 2020",
     likes: "199K",
     thumbnail: "assets/thumbnail/skills3.jpeg",
-    url: "https://www.youtube.com/watch?v=DQ3jAuEDVT0",
+    url: "https://www.youtube.com/embed/DQ3jAuEDVT0",
+    sub: "1.2M",
     description: "Football skills that should be illegal because they totally embarrassed their defenders.",
   },
   {
@@ -210,7 +225,8 @@ export const videos = [
     date: "Dec 9, 2021",
     likes: "126K",
     thumbnail: "assets/thumbnail/skills4.jpeg",
-    url: "https://www.youtube.com/watch?v=wDaJHvAeGqo",
+    url: "https://www.youtube.com/embed/wDaJHvAeGqo",
+    sub: "1.2M",
     description: "Some of the craziest football skills done live by the best in the game.",
   },
   // Champions League
@@ -223,7 +239,8 @@ export const videos = [
     date: "May 6, 2022",
     likes: "1.6K",
     thumbnail: "assets/thumbnail/ucl1.jpeg",
-    url: "https://www.youtube.com/watch?v=eyyXmYABcxE",
+    url: "https://www.youtube.com/embed/eyyXmYABcxE",
+    sub: "1.2M",
     description: "Peter Drury's Best Champions League Matches Commentary 2021/22",
   },
   {
@@ -235,7 +252,8 @@ export const videos = [
     date: "May 10, 2020",
     likes: "27K",
     thumbnail: "assets/thumbnail/ucl2.jpeg",
-    url: "https://www.youtube.com/watch?v=IYW3uVpx2e4",
+    url: "https://www.youtube.com/embed/IYW3uVpx2e4",
+    sub: "1.2M",
     description: "The best and most incredible matches in the UEFA Champions League",
   },
   {
@@ -247,7 +265,8 @@ export const videos = [
     date: "Feb 25, 2022",
     likes: "7K",
     thumbnail: "assets/thumbnail/ucl3.jpeg",
-    url: "https://www.youtube.com/watch?v=w_cnjJ7e04M",
+    url: "https://www.youtube.com/embed/w_cnjJ7e04M",
+    sub: "1.2M",
     description: "The best and most incredible matches in the UEFA Champions League - English Commentary",
   },
   {
@@ -259,7 +278,8 @@ export const videos = [
     date: "Nov 29, 2021",
     likes: "7.8K",
     thumbnail: "assets/thumbnail/ucl4.jpeg",
-    url: "https://www.youtube.com/watch?v=XFaBLMsxNcE",
+    url: "https://www.youtube.com/embed/XFaBLMsxNcE",
+    sub: "1.2M",
     description: "It's about classic games and clashes between two teams in the Champions League. In the video the matches and clashes are over 2 games. The matches, especially the second leg, were nerve wrecking, exciting and very close. Football can be amazing and this video shows some of the most amazing matches from the Champions League.",
   },
   // Premier League
@@ -272,7 +292,8 @@ export const videos = [
     date: "Dec 30, 2019",
     likes: "85K",
     thumbnail: "assets/thumbnail/pl1.jpeg",
-    url: "https://www.youtube.com/watch?v=4Dk7eYoj5GI",
+    url: "https://www.youtube.com/embed/4Dk7eYoj5GI",
+    sub: "1.2M",
     description: "This video features Wayne Rooney’s bicycle kick v Manchester City, Papiss Cissé’s wonder strike against Chelsea, Olivier Giroud’s scorpion kick against Crystal Palace and loads more!",
   },
   {
@@ -284,7 +305,8 @@ export const videos = [
     date: "May 12, 2020",
     likes: "42K",
     thumbnail: "assets/thumbnail/pl2.jpeg",
-    url: "https://www.youtube.com/watch?v=sZRvZaeCNNg",
+    url: "https://www.youtube.com/embed/sZRvZaeCNNg",
+    sub: "1.2M",
     description: "A compilation of the six highest-scoring matches in Premier League history. West Bromwich Albion 5-5 Manchester United. Arsenal 7-3 Newcastle United. Manchester United 8-2 Arsenal. Tottenham Hotspur 9-1 Wigan Athletic. Tottenham Hotspur 6-4 Reading. Portsmouth 7-4 Reading.",
   },
   {
@@ -296,7 +318,8 @@ export const videos = [
     date: "Mar 14, 2022",
     likes: "43K",
     thumbnail: "assets/thumbnail/pl3.jpeg",
-    url: "https://www.youtube.com/watch?v=YLUcuP4EOfA",
+    url: "https://www.youtube.com/embed/YLUcuP4EOfA",
+    sub: "1.2M",
     description: "Watch the extended highlights as a Cristiano Ronaldo hat-trick meant Tottenham Hotspur lost 3-2 to Manchester United at Old Trafford in the Premier League.",
   },
   {
@@ -308,7 +331,8 @@ export const videos = [
     date: "Feb 23, 2019",
     likes: "139K",
     thumbnail: "assets/thumbnail/pl4.jpeg",
-    url: "https://www.youtube.com/watch?v=qsyFbyX5PuY",
+    url: "https://www.youtube.com/embed/qsyFbyX5PuY",
+    sub: "1.2M",
     description: "Relive this classic win over Liverpool as Cristiano Ronaldo bagged his first goal against our huge rivals, with Wes Brown and Nani rounding off a perfect afternoon at Old Trafford!",
   },
 ];

@@ -1,5 +1,5 @@
 import ExploreVideo from 'components/exploreVideo';
-import { useVideo } from "context/videoContext"
+import { useVideo } from "context/videoContext";
 
 const ExploreContent = () => {
     const { videoState: { videos }, loader } = useVideo();
