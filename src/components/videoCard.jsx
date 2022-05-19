@@ -6,8 +6,9 @@ import { MdPlaylistAdd } from 'react-icons/md';
 import { BsThreeDots } from 'react-icons/bs';
 import { useVideo } from "context/videoContext";
 
-const VideoCard = ({ title, url, creator, sub, views, date, likes, description }) => {
-    const { setModal } = useVideo();
+const VideoCard = ({_id, title, url, creator, sub, views, date, likes, description, thumbnail }) => {
+    const { setModal, videoDispatch } = useVideo();
+    const video = {_id, title, url, creator, sub, views, date, likes, description, thumbnail}
 
     return (
         <>
@@ -21,7 +22,7 @@ const VideoCard = ({ title, url, creator, sub, views, date, likes, description }
                         <span>{date}</span>
                     </div>
                     <div className="vid-player-options">
-                        <span><AiFillLike />&nbsp; {likes}</span>
+                        <span onClick={() => videoDispatch({ type: "LIKE", payload: video })}><AiFillLike />&nbsp; {likes}</span>
                         <span><AiFillDislike />&nbsp; DISLIKE</span>
                         <span><RiShareForwardFill />&nbsp; SHARE</span>
                         <span><BiDollarCircle />&nbsp; THANKS</span>

@@ -13,7 +13,7 @@ const PlaylistModal = ({ video }) => {
         }
         const newPlaylist = {
             name: playlistName,
-            video: video
+            video: video,
         }
         videoDispatch({ type: "ADD_TO_PLAYLIST", payload: newPlaylist })
         setPlaylistName("")
