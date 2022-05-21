@@ -1,14 +1,14 @@
 import React from 'react'
-import HomeNav from "components/homeNav"
-import HomeSideBar from 'components/homeSideBar'
+import MainNav from "components/mainNav"
+import SideBar from 'components/sideBar'
 import HomeContent from 'components/homeContent'
 
 const Homepage = () => {
     return (
         <>
-            <HomeNav/>
+            <MainNav/>
             <div className="home-body">
-                <HomeSideBar/>
+                <SideBar/>
                 <HomeContent/>
             </div>
         </>
