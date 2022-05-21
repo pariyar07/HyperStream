@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useVideo } from "context/videoContext";
-import { v4 as uuid } from "uuid";
 
 const PlaylistModal = ({ video }) => {
     const { videoState: { playlist }, videoDispatch, modal, setModal } = useVideo();
@@ -30,7 +29,7 @@ const PlaylistModal = ({ video }) => {
                         <input type="text" placeholder="Add playlist name" onChange={(e) => setPlaylistName(e.target.value)} value={playlistName}/>
                     </div>
                     <div className="playlist-list">{playlist.map(play => {
-                        return <p key={uuid()}>{play.name}</p>
+                        return <p key={playlist._id}>{play.name}</p>
                     })}</div>
                     <div className="playlist-modal-footer">
                         <button onClick={addPlaylist}>Add to Playlist</button>
