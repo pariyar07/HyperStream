@@ -21,8 +21,8 @@ const SideBar = () => {
                     <NavLink to="/" style={navActive}><AiFillHome/>&nbsp; Home</NavLink>
                     <NavLink to="/explore" style={navActive}><BsCollectionPlayFill/>&nbsp; Explore</NavLink>
                     <NavLink to="/playlist" style={navActive}><MdOutlineFavorite/>&nbsp; Your Playlist</NavLink>
-                    <NavLink to="/history" style={navActive}><FaHistory/>&nbsp; History</NavLink>
                     <NavLink to="/watch-later" style={navActive}><MdWatchLater/>&nbsp; Watch Later</NavLink>
+                    <NavLink to="/history" style={navActive}><FaHistory/>&nbsp; History</NavLink>
                 </div>
                 <div className="sidebar-sub-list">
                     <h3>Subscription</h3>
