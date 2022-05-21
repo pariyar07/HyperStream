@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { useVideo } from "context/videoContext";
+import { useToast } from 'custom/useToast';
 
 const PlaylistModal = ({ video }) => {
     const { videoState: { playlist }, videoDispatch, modal, setModal } = useVideo();
     const [playlistName, setPlaylistName] = useState("");
+    const { showToast } = useToast();
 
     const addPlaylist = (e) => {
         e.preventDefault();
@@ -15,6 +17,7 @@ const PlaylistModal = ({ video }) => {
             video: video,
         }
         videoDispatch({ type: "ADD_TO_PLAYLIST", payload: newPlaylist })
+        showToast("Added to Playlist", "success")
         setPlaylistName("")
     }
 

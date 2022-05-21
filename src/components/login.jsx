@@ -2,11 +2,13 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from 'context/authContext';
+import { useToast } from 'custom/useToast';
 
 const Login = () => {
     const { setIsLoggedIn } = useAuth();
     const navigate = useNavigate();
     const location = useLocation();
+    const { showToast } = useToast();
 
     const handleGuestLogin = async (e) => {
         e.preventDefault();
@@ -15,12 +17,12 @@ const Login = () => {
                 email: "adarshbalika@neog.camp",
                 password: "adarshBalika",
             });
-            console.log(response);
             localStorage.setItem("token", response.data.encodedToken);
         } catch (error) {
             console.log(error);
         }
         setIsLoggedIn((isLoggedIn) => !isLoggedIn);
+		showToast("Successfully Logged In", 'success');
         navigate(location?.state?.from?.pathname, { replace: true });
     }
 

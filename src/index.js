@@ -14,7 +14,8 @@ import { VideoProvider } from "context/videoContext";
 import { AuthProvider } from "context/authContext";
 import Login from "pages/login/login.jsx";
 import SignUp from "pages/signup/signup.jsx";
-import {RequiresAuth} from "services/requiresAuth.jsx";
+import { RequiresAuth } from "services/requiresAuth.jsx";
+import { ToastContainer } from "react-toastify";
 
 // Call make Server
 makeServer();
@@ -25,6 +26,15 @@ root.render(
     <VideoProvider>
       <BrowserRouter>
         <AuthProvider>
+          <ToastContainer
+            position="bottom-right"
+            autoClose="3000"
+            hideProgressBar="false"
+            closeOnClick="true"
+            pauseOnHover="true"
+            draggable="true"
+            progress="undefined"
+          />
           <Routes>
             <Route path="/" element={<App />} />
             <Route path="/explore" element={<RequiresAuth><Explore /></RequiresAuth>} />

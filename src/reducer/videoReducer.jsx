@@ -7,6 +7,11 @@ const VideoReducer = (state, action) => {
                 ...state, liked: [...state.liked, {...action.payload}]
             }
         }
+        case 'DISLIKE':{
+            return {
+                ...state, liked: state.liked.filter(vid => vid._id !== action.payload._id)
+            }
+        }
         case 'WATCH_LATER':{
             return {
                 ...state, watchlater: [...state.watchlater, {...action.payload}]
