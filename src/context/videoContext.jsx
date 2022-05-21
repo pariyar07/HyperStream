@@ -5,7 +5,8 @@ import { getVideos } from "services/videoService"
 const VideoContext = createContext();
 
 const VideoProvider = ({ children }) => {
-    const [loader, setLoader] = useState(false)
+    const [loader, setLoader] = useState(false);
+    const [modal, setModal] = useState(false);
 
     useEffect(() => {
         (async () => {
@@ -29,7 +30,7 @@ const VideoProvider = ({ children }) => {
     })
 
     return (
-        <VideoContext.Provider value={{ videoState, videoDispatch, loader }}>
+        <VideoContext.Provider value={{ videoState, videoDispatch, loader, modal, setModal }}>
             {children}
         </VideoContext.Provider>
     )
