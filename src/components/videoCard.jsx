@@ -5,9 +5,20 @@ import { BiDollarCircle } from 'react-icons/bi';
 import { MdPlaylistAdd } from 'react-icons/md';
 import { BsThreeDots } from 'react-icons/bs';
 import { useVideo } from "context/videoContext";
+import { useToast } from 'custom/useToast';
 
-const VideoCard = ({ title, url, creator, sub, views, date, likes, description }) => {
-    const { setModal } = useVideo();
+const VideoCard = ({_id, title, url, creator, sub, views, date, likes, description, thumbnail }) => {
+    const { setModal, videoDispatch } = useVideo();
+    const video = {_id, title, url, creator, sub, views, date, likes, description, thumbnail}
+    const { showToast } = useToast();
+    const likeVideo = () => {
+        videoDispatch({ type: "LIKE", payload: video })
+        showToast("Video Liked", 'success');
+    }
+    const dislikeVideo = () => {
+        videoDispatch({ type: "DISLIKE", payload: video })
+        showToast("Video Disliked", 'error');
+    }
 
     return (
         <>
@@ -21,8 +32,8 @@ const VideoCard = ({ title, url, creator, sub, views, date, likes, description }
                         <span>{date}</span>
                     </div>
                     <div className="vid-player-options">
-                        <span><AiFillLike />&nbsp; {likes}</span>
-                        <span><AiFillDislike />&nbsp; DISLIKE</span>
+                        <span onClick={likeVideo}><AiFillLike />&nbsp; {likes}</span>
+                        <span onClick={dislikeVideo}><AiFillDislike />&nbsp; DISLIKE</span>
                         <span><RiShareForwardFill />&nbsp; SHARE</span>
                         <span><BiDollarCircle />&nbsp; THANKS</span>
                         <span><RiScissorsFill />&nbsp; CLIP</span>

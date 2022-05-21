@@ -1,12 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
 @import url("https://waldo-ui.netlify.app/styles/main.css");
+@import 'react-toastify/dist/ReactToastify.css';
 
 
 @import url(pages/homepage/styles.css);
 @import url(pages/explore/styles.css);
 @import url(pages/playlist/styles.css);
 @import url(pages/singleVideoPage/styles.css);
+@import url(pages/login/styles.css);
 
 *,
 ::before,

@@ -1,0 +1,124 @@
+.sign-up-wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    background-color: var(--video-secondary);
+}
+
+.sign-up-left>img{
+    min-width: 400px;
+}
+.sign-up-right{
+    width: 450px;
+    background: var(--primary-clr);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-control>input::placeholder {
+        color: var(--primary-clr-hover);
+}
+
+.sign-up.button-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header{
+    background-color: var(--placeholder-clr);
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.header h2{
+    margin: 0;
+}
+
+.form{
+    padding: 20px 40px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    border: 1px solid var(--placeholder-clr);
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form button{
+    background-color: var(--primary-bg);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.form button:hover{
+    background-color: var(--primary-clr-hover);
+}
+
+.keep-signed{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.guest-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    color: var(--video-primary);
+    font-weight: 800;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.guest-login:hover{
+    color: var(--video-primary-dark);
+}
+
+#sign-in{
+    text-align: center;
+    padding: 10px;
+    font-family: inherit;
+}
+
+/* image-rotation */
+.rotate {
+    animation: rotation 15s infinite linear;
+}
+@keyframes rotation {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(359deg);
+    }
+}
