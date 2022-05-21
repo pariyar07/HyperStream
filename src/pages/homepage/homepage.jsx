@@ -7,7 +7,7 @@ const Homepage = () => {
     return (
         <>
             <MainNav/>
-            <div className="home-body">
+            <div className="main-body">
                 <SideBar/>
                 <HomeContent/>
             </div>

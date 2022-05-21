@@ -52,7 +52,6 @@ const HomeContent = () => {
                         {category.map((cat) => {
                             return <ul key={cat._id} >
                                 <li>
-                                    <BsFillPlayFill className="play-icon"/>
                                     <img src={cat.thumbnail} alt="category thumbnail" />
                                     <p>{cat.categoryName}</p>
                                 </li>

@@ -8,7 +8,7 @@ import { v4 as uuid } from "uuid";
 export const categories = [
   {
     _id: uuid(),
-    categoryName: "Best Comebacks",
+    categoryName: "Comebacks",
     thumbnail: "assets/categories/comebacks.jpeg"
   },
   {
@@ -18,7 +18,7 @@ export const categories = [
   },
   {
     _id: uuid(),
-    categoryName: "Amazing Goals",
+    categoryName: "Goals",
     thumbnail: "assets/categories/goals.jpeg"
   },
   {
