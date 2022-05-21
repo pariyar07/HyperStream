@@ -27,7 +27,7 @@ root.render(
         <AuthProvider>
           <Routes>
             <Route path="/" element={<App />} />
-            <Route path="/explore" element={<Explore />} />
+            <Route path="/explore" element={<RequiresAuth><Explore /></RequiresAuth>} />
             <Route path="/video/:videoId" element={<SingleVideoPage />} />
             <Route path="/playlist" element={<RequiresAuth><Playlist /></RequiresAuth>} />
             <Route path="/history" element={<RequiresAuth><History /></RequiresAuth>} />
