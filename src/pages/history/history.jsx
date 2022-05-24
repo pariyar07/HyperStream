@@ -1,5 +1,4 @@
-import React from 'react'
-import MainNav from "components/mainNav"
+
 import SideBar from 'components/sideBar'
 import { useVideo } from "context/videoContext";
 import HistoryVideo from "components/historyVideo"
@@ -9,7 +8,6 @@ const History = () => {
 
     return (
     <>
-        <MainNav/>
         <div className="main-body">
                 <SideBar />
                 <main className="explore-main-container">

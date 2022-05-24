@@ -14,10 +14,9 @@ const Login = () => {
         e.preventDefault();
         try {
             let response = await axios.post("/api/auth/login", {
-                email: "admin@neog.camp",
+                email: "admin@gmail.com",
                 password: "admin123",
             });
-            console.log("helooooo", response.data.encodedToken);
             localStorage.setItem("token", response.data.encodedToken);
         } catch (error) {
             console.log(error);

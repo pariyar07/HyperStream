@@ -1,4 +1,3 @@
-import MainNav from "components/mainNav";
 import SideBar from 'components/sideBar';
 import { useVideo } from "context/videoContext";
 import WatchLaterVideo from "components/watchLaterVideo"
@@ -8,7 +7,6 @@ const WatchLater = () => {
 
     return (
         <>
-            <MainNav />
             <div className="main-body">
                 <SideBar />
                 <main className="explore-main-container">

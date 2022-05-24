@@ -111,16 +111,17 @@ recommended video
     display: flex;
     flex-direction: column;
     width: 20%;
-    gap: 1rem
+    gap: 2rem;
 }
 
 .recommended-vid div{
     width: 100%;
+    cursor: pointer;
 }
 
 .single-page-thumbnail{
-    width: 200px;
-    height: 100%;
+    width: 220px;
+    height: 80%;
 }
 
 .single-video-info p{

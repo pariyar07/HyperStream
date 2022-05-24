@@ -1,4 +1,3 @@
-import MainNav from "components/mainNav";
 import SideBar from 'components/sideBar';
 import { useVideo } from "context/videoContext";
 import LikedVideo from "components/likedVideo"
@@ -9,7 +8,6 @@ const Liked = () => {
 
     return (
         <>
-            <MainNav />
             <div className="main-body">
                 <SideBar />
                 <main className="explore-main-container">
