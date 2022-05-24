@@ -13,10 +13,11 @@ const Login = () => {
     const handleGuestLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(`/api/auth/login`, {
-                email: "adarshbalika@neog.camp",
-                password: "adarshBalika",
+            let response = await axios.post("/api/auth/login", {
+                email: "admin@neog.camp",
+                password: "admin123",
             });
+            console.log("helooooo", response.data.encodedToken);
             localStorage.setItem("token", response.data.encodedToken);
         } catch (error) {
             console.log(error);
