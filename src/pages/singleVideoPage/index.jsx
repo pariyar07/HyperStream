@@ -1,4 +1,3 @@
-import MainNav from "components/mainNav";
 import SideBar from 'components/sideBar';
 import { useParams } from "react-router-dom";
 import { useVideo } from "context/videoContext";
@@ -18,7 +17,6 @@ const SingleVideoPage = () => {
 
     return (
         <>
-            <MainNav />
             <div className="main-body">
                 <SideBar />
                 <main className="single-video-main-container">
@@ -26,7 +24,7 @@ const SingleVideoPage = () => {
                     <div className="recommended-vid">
                         {videos.map((video) => {
                             return (<div key={video._id}>
-                                <img src={video.thumbnail} alt="category thumbnail" className="single-page-thumbnail"/>
+                                <img src={`https://i.ytimg.com/vi/${video.url.split("embed/")[1]}/mqdefault.jpg`} alt="category thumbnail" className="single-page-thumbnail"/>
                                 <div className="single-video-info">
                                     <p>{video.title.length > 40 ? video.title.slice(0, 40) + "....." : video.title}</p>
                                 </div>

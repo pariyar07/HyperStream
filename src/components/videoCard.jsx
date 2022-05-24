@@ -23,7 +23,7 @@ const VideoCard = ({_id, title, url, creator, sub, views, date, likes, descripti
     return (
         <>
             <div className="vid-player">
-                <iframe width="97%" height="25%" src={url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe width="97%" height="12%" src={url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 <h3>{title}</h3>
                 <div className="vid-player-info">
                     <div className="vid-player-nums">
