@@ -16,8 +16,8 @@ const VideoCard = ({_id, title, url, creator, sub, views, date, likes, descripti
         showToast("Video Liked", 'success');
     }
     const dislikeVideo = () => {
-        videoDispatch({ type: "DISLIKE", payload: video })
-        showToast("Video Disliked", 'error');
+        videoDispatch({ type: "UNLIKE", payload: video })
+        showToast("Video Unliked", 'success');
     }
 
     return (

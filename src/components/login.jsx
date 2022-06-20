@@ -23,7 +23,7 @@ const Login = () => {
         }
         setIsLoggedIn((isLoggedIn) => !isLoggedIn);
 		showToast("Successfully Logged In", 'success');
-        navigate(location?.state?.from?.pathname, { replace: true });
+        navigate(location?.state?.from?.pathname || "/", { replace: true });
     }
 
     return (
@@ -53,8 +53,8 @@ const Login = () => {
                             <span className="guest-login" onClick={handleGuestLogin}>Log in as Guest</span>
                         </div>
                         <div className="sign-up button-group">
-                            <button id="sign-btn">Log-In</button>
-                            <Link to="/signup"><button id="sign-btn">Sign-Up <i className="fas fa-chevron-right"></i></button></Link>
+                            <button>Log-In</button>
+                            <Link to="/signup"><button>Sign-Up <i className="fas fa-chevron-right"></i></button></Link>
                         </div>
                         <Link to="/"><p className="forgot-password">Forgot Password?</p></Link>
                     </form>

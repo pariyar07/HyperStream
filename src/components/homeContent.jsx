@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import axios from "axios"
-import { BsFillPlayFill } from 'react-icons/bs'
 
 const HomeContent = () => {
     const [category, setCategory] = useState([])
