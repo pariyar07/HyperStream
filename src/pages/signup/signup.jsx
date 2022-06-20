@@ -30,8 +30,8 @@ export default function SignUp() {
                                 <input type="password" id="checkpassword" placeholder="Check Password" />
                             </div>
                             <div className="sign-up button-group">
-                                <button id="sign-btn">Sign-Up</button>
-                                <Link to="/login"><button id="sign-btn">Login <i className="fas fa-chevron-right"></i></button></Link>
+                                <button>Sign-Up</button>
+                                <Link to="/login"><button>Login <i className="fas fa-chevron-right"></i></button></Link>
                             </div>
                         </form>
                     </div>
