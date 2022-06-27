@@ -15,7 +15,7 @@ export const filterReducer = (state, action) => {
     case "CLEAR_FILTER": {
       return {
         searchQuery: "",
-        category: false,
+        category: "",
       };
     }
     default: {

@@ -8,6 +8,28 @@
     gap: 5rem;
 }
 
+.page-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-clear-all{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: 2px solid var(--video-primary);
+    color: var(--primary-clr);
+    padding: 0 2rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.page-clear-all:hover{
+    background-color: var(--video-primary);
+    color: var(--primary-bg);
+}
+
 .playlist-videos {
     display: flex;
     flex-direction: row;

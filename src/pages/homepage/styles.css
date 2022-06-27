@@ -95,6 +95,23 @@ home-main-body
     background-color: var(--string-clr);
 }
 
+.show-all-video{
+    display: flex;
+    margin: auto;
+    background: none;
+    border: 2px solid var(--video-primary);
+    color: var(--primary-clr);
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.show-all-video:hover{
+    background-color: var(--video-primary);
+    color: var(--primary-bg);
+}
+
 /* sidebar-subs */
 .sidebar-sub-list{
     display: flex;
