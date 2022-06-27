@@ -23,7 +23,7 @@ export const categories = [
   },
   {
     _id: uuid(),
-    category: "Celebrations",
+    category: "Celebration",
     thumbnail: "assets/categories/celebration.jpeg"
   },
   {

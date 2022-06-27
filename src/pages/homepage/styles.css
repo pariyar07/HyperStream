@@ -6,9 +6,10 @@ home-nav
     flex-direction: row;
     width: 100vw;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background: var(--video-secondary);
     z-index: 1;
+    padding: 0 5rem;
 }
 
 .video-brand{
