@@ -3,11 +3,13 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { useVideo } from "context/videoContext";
 import { useToast } from "custom/useToast";
+import { useAuth } from "context/authContext";
 
 const HomeContent = () => {
   const [category, setCategory] = useState([]);
   const { filterDispatch } = useVideo();
   const { showToast } = useToast();
+  const { isLoggedIn } = useAuth();
 
   const getCategory = () => {
     (async () => {
@@ -45,23 +47,40 @@ const HomeContent = () => {
               return (
                 <ul key={cat._id}>
                   <Link to="/explore">
-                    <li
-                      onClick={() =>
-                        filterDispatch(
-                          {
-                            type: "SORT_BY_CATEGORY",
-                            payload: cat.category,
-                          },
-                          showToast(
-                            `Showing video from ${cat.category} category`,
-                            "success"
+                    {isLoggedIn ? (
+                      <li
+                        onClick={() =>
+                          filterDispatch(
+                            {
+                              type: "SORT_BY_CATEGORY",
+                              payload: cat.category,
+                            },
+                            showToast(
+                              `Showing video from ${cat.category} category`,
+                              "success"
+                            )
                           )
-                        )
-                      }
-                    >
-                      <img src={cat.thumbnail} alt="category thumbnail" />
-                      <p>{cat.category}</p>
-                    </li>
+                        }
+                      >
+                        <img src={cat.thumbnail} alt="category thumbnail" />
+                        <p>{cat.category}</p>
+                      </li>
+                    ) : (
+                      <li
+                        onClick={() =>
+                          filterDispatch(
+                            {
+                              type: "SORT_BY_CATEGORY",
+                              payload: cat.category,
+                            },
+                            showToast(`Login First`, "success")
+                          )
+                        }
+                      >
+                        <img src={cat.thumbnail} alt="category thumbnail" />
+                        <p>{cat.category}</p>
+                      </li>
+                    )}
                   </Link>
                 </ul>
               );

@@ -1,18 +1,16 @@
-import React from 'react'
-import SideBar from 'components/sideBar'
-import ExploreContent from "components/exploreContent"
-import PlaylistModal from 'components/playlistModal'
+import React from "react";
+import SideBar from "components/sideBar";
+import ExploreContent from "components/exploreContent";
 
 const Explore = () => {
-    return (
+  return (
     <>
-        <div className="main-body">
-            <SideBar/>
-            <ExploreContent/>
-            <PlaylistModal/>
-        </div>
+      <div className="main-body">
+        <SideBar />
+        <ExploreContent />
+      </div>
     </>
-    )
-}
+  );
+};
 
-export default Explore
+export default Explore;

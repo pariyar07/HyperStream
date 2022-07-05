@@ -1,8 +1,9 @@
+import { useState } from "react";
 import SideBar from "components/sideBar";
 import { useVideo } from "context/videoContext";
-import PlaylistVideo from "components/playlistVideo";
-import PlaylistBlock from "components/playlistBlock";
+import { MdPlaylistPlay } from "react-icons/md";
 import { useToast } from "custom/useToast";
+import OpenPlaylist from "components/openPlaylist";
 
 const Playlist = () => {
   const {
@@ -11,6 +12,8 @@ const Playlist = () => {
     loader,
   } = useVideo();
   const { showToast } = useToast();
+  const [playlistContent, setPlaylistContent] = useState([]);
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <>
@@ -23,7 +26,7 @@ const Playlist = () => {
             <>
               <div className="explore-section">
                 {playlist.length > 0 ? (
-                  <div class="page-header">
+                  <div className="page-header">
                     <h2>Playlists</h2>
                     <button
                       className="page-clear-all"
@@ -39,11 +42,39 @@ const Playlist = () => {
                   <h2 style={{ textAlign: "center" }}>Playlist not Made!</h2>
                 )}
                 <div className="playlist-videos">
-                  {playlist.map((video) => {
+                  {playlist.map((playlistName) => {
                     return (
-                      <div key={video.video._id} className="playlist-box">
-                        <PlaylistBlock playlistName={video} />
-                        <PlaylistVideo video={video.video} />
+                      <div
+                        onClick={() => setShowModal(true)}
+                        key={playlistName._id}
+                      >
+                        <div
+                          className="playlist-box"
+                          onClick={() =>
+                            setPlaylistContent(playlistName.videos)
+                          }
+                        >
+                          <span className="playlist-name">
+                            {playlistName.playlistName}&nbsp;
+                            <MdPlaylistPlay />
+                          </span>
+                          <span className="playlist-video-length">
+                            Videos: {playlistName.videos.length}
+                          </span>
+                          {playlistName.videos.length < 1 ? (
+                            <img
+                              src="/assets/hyperstream.png"
+                              alt="No Video Available"
+                              className="playlist-image"
+                            ></img>
+                          ) : (
+                            <img
+                              src={playlistName.videos[0].thumbnail}
+                              alt="video-available"
+                              className="playlist-image"
+                            />
+                          )}
+                        </div>
                       </div>
                     );
                   })}
@@ -51,6 +82,11 @@ const Playlist = () => {
               </div>
             </>
           )}
+          <OpenPlaylist
+            playlistContent={playlistContent}
+            showModal={showModal}
+            setShowModal={setShowModal}
+          />
         </main>
       </div>
     </>

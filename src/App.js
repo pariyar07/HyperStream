@@ -18,7 +18,7 @@ function App() {
       <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/explore" element={<RequiresAuth><Explore /></RequiresAuth>} />
-            <Route path="/video/:videoId" element={<SingleVideoPage />} />
+            <Route path="/video/:videoId" element={<RequiresAuth><SingleVideoPage /></RequiresAuth>} />
             <Route path="/playlist" element={<RequiresAuth><Playlist /></RequiresAuth>} />
             <Route path="/history" element={<RequiresAuth><History /></RequiresAuth>} />
             <Route path="/liked" element={<RequiresAuth><Liked /></RequiresAuth>} />

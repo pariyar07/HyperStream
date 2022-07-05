@@ -11,12 +11,10 @@ const MainNav = () => {
   return (
     <>
       <nav className="video-nav-content">
-        <div className="video-brand">
-          <img src="assets/hyperstream.png" alt="logo" className="brand-img" />
-          <a href=".">
-            <h2 className="video-nav-title">Hyper Stream</h2>
-          </a>
-        </div>
+        <Link to="/" className="video-brand">
+          <img src="/assets/hyperstream.png" alt="logo" className="brand-img" />
+          <h2 className="video-nav-title">Hyper Stream</h2>
+        </Link>
         {location.pathname === "/explore" && (
           <div className="video-nav-search">
             <a href=".">

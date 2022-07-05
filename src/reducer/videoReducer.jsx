@@ -40,10 +40,21 @@ const VideoReducer = (state, action) => {
         watchlater: [],
       };
     }
-    case "ADD_TO_PLAYLIST": {
+    case "ADD_PLAYLIST": {
       return {
         ...state,
         playlist: [...state.playlist, { ...action.payload }],
+      };
+    }
+    case "ADD_TO_PLAYLIST": {
+      return {
+        ...state,
+        playlist: [
+          ...state.playlist.filter(
+            (playlistName) => playlistName._id !== action.payload._id
+          ),
+          { ...action.payload },
+        ],
       };
     }
     case "CLEAR_PLAYLIST": {

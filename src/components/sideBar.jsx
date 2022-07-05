@@ -22,27 +22,27 @@ const SideBar = () => {
     <>
       <div className="home-sidebar">
         <div className="sidebar-top-list">
-          <NavLink to="/" style={navActive}>
+          <NavLink to="/" style={navActive} className="navlinks">
             <AiFillHome />
             &nbsp; Home
           </NavLink>
-          <NavLink to="/explore" style={navActive}>
+          <NavLink to="/explore" style={navActive} className="navlinks">
             <BsCollectionPlayFill />
             &nbsp; Explore
           </NavLink>
-          <NavLink to="/playlist" style={navActive}>
+          <NavLink to="/playlist" style={navActive} className="navlinks">
             <MdOutlineFavorite />
             &nbsp; Your Playlist
           </NavLink>
-          <NavLink to="/liked" style={navActive}>
+          <NavLink to="/liked" style={navActive} className="navlinks">
             <MdOutlineFavorite />
             &nbsp; Liked Videos
           </NavLink>
-          <NavLink to="/watch-later" style={navActive}>
+          <NavLink to="/watch-later" style={navActive} className="navlinks">
             <MdWatchLater />
             &nbsp; Watch Later
           </NavLink>
-          <NavLink to="/history" style={navActive}>
+          <NavLink to="/history" style={navActive} className="navlinks">
             <FaHistory />
             &nbsp; History
           </NavLink>

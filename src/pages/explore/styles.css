@@ -127,6 +127,7 @@ dropdown
     overflow: hidden;
 }
 .menu-content span{
+    display: flex;
     color: var(--primary-clr);
     width: 100%;
     padding: 0.5rem 0.4rem;
@@ -169,7 +170,7 @@ Modal
     justify-content: center;
     color: var(--primary-clr);
     background: rgba(60, 60, 60, 0.7);
-    z-index: 3;
+    z-index: 50;
     width: 100vw;
     height: 100vh;
 }
@@ -216,8 +217,22 @@ Modal
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 0.5rem;
+    gap: 1rem;
     justify-content: flex-start;
+}
+
+.playlist-modal-list{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.playlist-buttons{
+    font-size: 1.2rem;
+    transition: 0.2s ease-in-out;
+}
+.playlist-buttons:hover{
+    transform: scale(1.2);
 }
 
 .playlist-modal-footer{

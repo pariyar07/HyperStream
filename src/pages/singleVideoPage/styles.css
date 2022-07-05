@@ -44,6 +44,11 @@
     color: var(--primary-clr);
 }
 
+.vid-player-options span{
+    display: flex;
+    align-items: center;
+}
+
 .vid-player-options>*{
     cursor: pointer;
 }
@@ -71,6 +76,12 @@
     align-items: flex-start;
     justify-content: center;
 }
+
+.vid-creator-info div div p{
+    display: flex;
+    align-items: center;
+}
+
 .creator-verified{
     padding-top: .3rem;
     color: var(--string-clr);

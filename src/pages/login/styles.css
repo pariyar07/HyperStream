@@ -110,6 +110,12 @@
     font-family: inherit;
 }
 
+.forgot-password{
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
 /* image-rotation */
 .rotate {
     animation: rotation 15s infinite linear;

@@ -95,6 +95,11 @@ home-main-body
     background-color: var(--string-clr);
 }
 
+.navlinks{
+    display: flex;
+    align-items: center;
+}
+
 .show-all-video{
     display: flex;
     margin: auto;
@@ -128,6 +133,7 @@ home-main-body
 
 /* sub-pics */
 .sub-pics{
+    display: flex;
     padding-left: 3rem;
 }
 
@@ -157,6 +163,11 @@ home-main-body
     gap: 0.8rem;
     padding-left: 3rem;
     margin-top: 1rem;
+}
+
+.sidebar-sub-list ul li{
+    display: flex;
+    align-items: center;
 }
 
 .sidebar-sub-list ul li img{

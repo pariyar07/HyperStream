@@ -1,29 +1,31 @@
 import { useState } from "react";
 import { useVideo } from "context/videoContext";
+import { v4 as uuid } from "uuid";
 import { useToast } from "custom/useToast";
+import PlaylistList from "./playlistList";
 
 const PlaylistModal = ({ video }) => {
   const {
-    videoState: { playlist },
-    videoDispatch,
     modal,
     setModal,
+    videoState: { playlist },
+    videoDispatch,
   } = useVideo();
-  const [playlistName, setPlaylistName] = useState("");
   const { showToast } = useToast();
+  const [playlistName, setPlaylistName] = useState("");
 
-  const addPlaylist = (e) => {
-    e.preventDefault();
-    if (playlistName.length === 0) {
-      return;
-    }
-    const newPlaylist = {
-      name: playlistName,
-      video: video,
-    };
-    videoDispatch({ type: "ADD_TO_PLAYLIST", payload: newPlaylist });
-    showToast("Added to Playlist", "success");
-    setPlaylistName("");
+  const addNewPlaylistFolder = () => {
+    return (
+      videoDispatch({
+        type: "ADD_PLAYLIST",
+        payload: { _id: uuid(), playlistName: playlistName, videos: [] },
+      }),
+      setPlaylistName("")
+    );
+  };
+
+  const showAddPlaylistToast = () => {
+    showToast("Add Playlist Name", "error");
   };
 
   return (
@@ -44,14 +46,24 @@ const PlaylistModal = ({ video }) => {
                 onChange={(e) => setPlaylistName(e.target.value)}
                 value={playlistName}
               />
+              {playlistName.length < 1 ? (
+                <button onClick={showAddPlaylistToast}>
+                  Create New Playlist
+                </button>
+              ) : (
+                <button onClick={addNewPlaylistFolder}>
+                  Create New Playlist
+                </button>
+              )}
             </div>
             <div className="playlist-list">
               {playlist.map((play) => {
-                return <p key={playlist._id}>{play.name}</p>;
+                return (
+                  <PlaylistList play={play} video={video} key={play._id} />
+                );
               })}
             </div>
             <div className="playlist-modal-footer">
-              <button onClick={addPlaylist}>Add to Playlist</button>
               <button onClick={() => setModal(false)}>Close</button>
             </div>
           </div>
