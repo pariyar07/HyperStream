@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -9,21 +10,43 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { showToast } = useToast();
+  const [userEmail, setUserEmail] = useState();
+  const [userPassword, setUserPassword] = useState();
 
   const handleGuestLogin = async (e) => {
     e.preventDefault();
     try {
       let response = await axios.post("/api/auth/login", {
-        email: "admin@gmail.com",
-        password: "admin123",
+        email: "satyam@hyperstream.com",
+        password: "satyam123",
       });
       localStorage.setItem("token", response.data.encodedToken);
+      localStorage.setItem("user", response.data.foundToken);
+      setIsLoggedIn((isLoggedIn) => !isLoggedIn);
+      showToast("Successfully Logged In", "success");
+      navigate(location?.state?.from?.pathname || "/", { replace: true });
     } catch (error) {
-      console.log(error);
+      console.error(error);
+      showToast("Error! Could not login", "error");
     }
-    setIsLoggedIn((isLoggedIn) => !isLoggedIn);
-    showToast("Successfully Logged In", "success");
-    navigate(location?.state?.from?.pathname || "/", { replace: true });
+  };
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      let response = await axios.post("/api/auth/login", {
+        email: userEmail,
+        password: userPassword,
+      });
+      localStorage.setItem("token", response.data.encodedToken);
+      localStorage.setItem("dealUser", JSON.stringify(response.data.foundUser));
+      setIsLoggedIn((isLoggedIn) => !isLoggedIn);
+      navigate(location?.state?.from?.pathname || "/", { replace: true });
+      showToast("Successfully Logged In", "success");
+    } catch (error) {
+      console.error(error);
+      showToast("Error! Try again later", "error");
+    }
   };
 
   return (
@@ -39,11 +62,23 @@ const Login = () => {
           <form id="form" className="form">
             <div className="form-control">
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" placeholder="Email" />
+              <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                value={userEmail}
+                onChange={(e) => setUserEmail(e.target.value)}
+              />
             </div>
             <div className="form-control">
               <label htmlFor="password">Password</label>
-              <input type="password" id="password" placeholder="Password" />
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                value={userPassword}
+                onChange={(e) => setUserPassword(e.target.value)}
+              />
             </div>
             <div>
               <div className="keep-signed">
@@ -55,7 +90,7 @@ const Login = () => {
               </span>
             </div>
             <div className="sign-up button-group">
-              <button>Log-In</button>
+              <button onClick={handleLogin}>Log-In</button>
               <Link to="/signup">
                 <button>
                   Sign-Up <i className="fas fa-chevron-right"></i>

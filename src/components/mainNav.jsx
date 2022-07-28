@@ -2,11 +2,18 @@ import { Link } from "react-router-dom";
 import { useAuth } from "context/authContext";
 import { useVideo } from "context/videoContext";
 import { useLocation } from "react-router-dom";
+import { useToast } from "custom/useToast";
 
 const MainNav = () => {
   const { isLoggedIn, setIsLoggedIn } = useAuth();
   const { filterDispatch } = useVideo();
   const location = useLocation();
+  const { showToast } = useToast();
+
+  const logOutHandler = () => {
+    setIsLoggedIn(false);
+    showToast("Successfully logged out", "success");
+  };
 
   return (
     <>
@@ -40,12 +47,7 @@ const MainNav = () => {
             </button>
             {isLoggedIn ? (
               <div className="dropdown-content">
-                <Link
-                  to="/"
-                  onClick={() => {
-                    setIsLoggedIn(false);
-                  }}
-                >
+                <Link to="/" onClick={logOutHandler}>
                   Log Out
                 </Link>
               </div>
